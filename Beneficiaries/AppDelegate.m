@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import "BeneficiariesList.h"
 
 @interface AppDelegate ()
 
@@ -13,9 +14,16 @@
 
 @implementation AppDelegate
 
+@synthesize window;
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    ViewController *vc = [[ViewController alloc] init];
+    UINavigationController *navigation_controller = [[UINavigationController alloc] initWithRootViewController: vc];
+    [self.window setRootViewController:navigation_controller];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
