@@ -16,13 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo 612x612" translatesAutoresizingMaskIntoConstraints="NO" id="5ha-Eo-Mwt">
-                                <rect key="frame" x="16" y="272" width="361" height="309"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="obb-v9-PC1">
+                                <rect key="frame" x="-9" y="0.0" width="402" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </imageView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="obb-v9-PC1" secondAttribute="trailing" id="6rC-n9-XnF"/>
+                            <constraint firstItem="obb-v9-PC1" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="J7P-9a-ghf"/>
+                            <constraint firstItem="obb-v9-PC1" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-25" id="UUk-p4-4og"/>
+                            <constraint firstAttribute="bottom" secondItem="obb-v9-PC1" secondAttribute="bottom" id="eN7-Ea-OC5"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -31,7 +37,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo 612x612" width="612" height="357"/>
+        <image name="logo" width="612" height="357"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -13,14 +13,15 @@
 		842005812C1F500000349B2D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 842005802C1F500000349B2D /* Base */; };
 		842005842C1F500000349B2D /* Beneficiaries.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 842005822C1F500000349B2D /* Beneficiaries.xcdatamodeld */; };
 		842005862C1F500400349B2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842005852C1F500400349B2D /* Assets.xcassets */; };
-		842005892C1F500400349B2D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 842005882C1F500400349B2D /* Base */; };
 		8420058C2C1F500400349B2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8420058B2C1F500400349B2D /* main.m */; };
 		842005962C1F500500349B2D /* BeneficiariesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 842005952C1F500500349B2D /* BeneficiariesTests.m */; };
 		842005A02C1F500500349B2D /* BeneficiariesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8420059F2C1F500500349B2D /* BeneficiariesUITests.m */; };
 		842005A22C1F500500349B2D /* BeneficiariesUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 842005A12C1F500500349B2D /* BeneficiariesUITestsLaunchTests.m */; };
 		842005B22C20974900349B2D /* Beneficiaries.json in Resources */ = {isa = PBXBuildFile; fileRef = 842005B12C20974900349B2D /* Beneficiaries.json */; };
-		843BC04C2C20C5F000AD477E /* Beneficiarie.m in Sources */ = {isa = PBXBuildFile; fileRef = 843BC04B2C20C5F000AD477E /* Beneficiarie.m */; };
-		843BC0552C22015700AD477E /* JsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 843BC0542C22015700AD477E /* JsonParser.m */; };
+		84B0BC232C2229A700AF6646 /* Beneficiary.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0BC222C2229A700AF6646 /* Beneficiary.m */; };
+		84B0BC252C2229CE00AF6646 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B0BC242C2229CE00AF6646 /* Launch Screen.storyboard */; };
+		84B0BC282C222A4900AF6646 /* logo 612x612 black.png in Resources */ = {isa = PBXBuildFile; fileRef = 84B0BC262C222A4900AF6646 /* logo 612x612 black.png */; };
+		84B0BC292C222A4900AF6646 /* logo 612x612.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84B0BC272C222A4900AF6646 /* logo 612x612.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +52,6 @@
 		842005802C1F500000349B2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		842005832C1F500000349B2D /* Beneficiaries.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Beneficiaries.xcdatamodel; sourceTree = "<group>"; };
 		842005852C1F500400349B2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		842005882C1F500400349B2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8420058A2C1F500400349B2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8420058B2C1F500400349B2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		842005912C1F500500349B2D /* BeneficiariesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeneficiariesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,9 +61,10 @@
 		842005A12C1F500500349B2D /* BeneficiariesUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeneficiariesUITestsLaunchTests.m; sourceTree = "<group>"; };
 		842005B12C20974900349B2D /* Beneficiaries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Beneficiaries.json; sourceTree = SOURCE_ROOT; };
 		843BC04A2C20BA9D00AD477E /* Beneficiary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Beneficiary.h; sourceTree = "<group>"; };
-		843BC04B2C20C5F000AD477E /* Beneficiarie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Beneficiarie.m; path = Beneficiaries/Beneficiarie.m; sourceTree = "<group>"; };
-		843BC0532C22015700AD477E /* JsonParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsonParser.h; sourceTree = "<group>"; };
-		843BC0542C22015700AD477E /* JsonParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsonParser.m; sourceTree = "<group>"; };
+		84B0BC222C2229A700AF6646 /* Beneficiary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Beneficiary.m; sourceTree = "<group>"; };
+		84B0BC242C2229CE00AF6646 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		84B0BC262C222A4900AF6646 /* logo 612x612 black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo 612x612 black.png"; sourceTree = "<group>"; };
+		84B0BC272C222A4900AF6646 /* logo 612x612.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "logo 612x612.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +95,6 @@
 		8420056A2C1F500000349B2D = {
 			isa = PBXGroup;
 			children = (
-				843BC04B2C20C5F000AD477E /* Beneficiarie.m */,
 				842005752C1F500000349B2D /* Beneficiaries */,
 				842005942C1F500500349B2D /* BeneficiariesTests */,
 				8420059E2C1F500500349B2D /* BeneficiariesUITests */,
@@ -116,8 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				843BC04A2C20BA9D00AD477E /* Beneficiary.h */,
-				843BC0532C22015700AD477E /* JsonParser.h */,
-				843BC0542C22015700AD477E /* JsonParser.m */,
+				84B0BC222C2229A700AF6646 /* Beneficiary.m */,
 				842005B12C20974900349B2D /* Beneficiaries.json */,
 				842005762C1F500000349B2D /* AppDelegate.h */,
 				842005772C1F500000349B2D /* AppDelegate.m */,
@@ -126,8 +125,10 @@
 				8420057C2C1F500000349B2D /* BeneficiariesList.h */,
 				8420057D2C1F500000349B2D /* BeneficiariesList.m */,
 				8420057F2C1F500000349B2D /* Main.storyboard */,
+				84B0BC242C2229CE00AF6646 /* Launch Screen.storyboard */,
 				842005852C1F500400349B2D /* Assets.xcassets */,
-				842005872C1F500400349B2D /* LaunchScreen.storyboard */,
+				84B0BC262C222A4900AF6646 /* logo 612x612 black.png */,
+				84B0BC272C222A4900AF6646 /* logo 612x612.jpg */,
 				8420058A2C1F500400349B2D /* Info.plist */,
 				8420058B2C1F500400349B2D /* main.m */,
 				842005822C1F500000349B2D /* Beneficiaries.xcdatamodeld */,
@@ -256,8 +257,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				842005862C1F500400349B2D /* Assets.xcassets in Resources */,
-				842005892C1F500400349B2D /* Base in Resources */,
 				842005812C1F500000349B2D /* Base in Resources */,
+				84B0BC292C222A4900AF6646 /* logo 612x612.jpg in Resources */,
+				84B0BC252C2229CE00AF6646 /* Launch Screen.storyboard in Resources */,
+				84B0BC282C222A4900AF6646 /* logo 612x612 black.png in Resources */,
 				842005B22C20974900349B2D /* Beneficiaries.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,10 +289,9 @@
 				8420058C2C1F500400349B2D /* main.m in Sources */,
 				8420057E2C1F500000349B2D /* BeneficiariesList.m in Sources */,
 				842005782C1F500000349B2D /* AppDelegate.m in Sources */,
-				843BC04C2C20C5F000AD477E /* Beneficiarie.m in Sources */,
 				8420057B2C1F500000349B2D /* SceneDelegate.m in Sources */,
+				84B0BC232C2229A700AF6646 /* Beneficiary.m in Sources */,
 				842005842C1F500000349B2D /* Beneficiaries.xcdatamodeld in Sources */,
-				843BC0552C22015700AD477E /* JsonParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,14 +334,6 @@
 				842005802C1F500000349B2D /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		842005872C1F500400349B2D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				842005882C1F500400349B2D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -472,7 +466,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Beneficiaries/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -499,7 +493,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Beneficiaries/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

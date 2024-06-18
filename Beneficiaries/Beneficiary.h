@@ -32,6 +32,7 @@
 
 @property (nonatomic, strong) Address *address;
 
++ (NSMutableArray*)jsonParser:(NSError **)jsonError inContainer:(NSMutableArray*)container;
 
 @end
 
