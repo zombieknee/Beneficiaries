@@ -17,8 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    NSError *jsonError = nil; 
+    NSError *jsonError = nil;
+    
     self.beneficiaries = [[NSMutableArray alloc] init];
     self.beneficiaries = [Beneficiary jsonParser:&jsonError inContainer:self.beneficiaries];
 }
@@ -66,7 +66,7 @@
 }
 
 - (NSMutableAttributedString *)formatAddress:(Beneficiary *)benficiary {
-    
+    // this cleans up the formating a bit better than standard the standard text layot in the alert
     NSString *addressString = [NSString stringWithFormat:@"%@\n\t\t\t\t%@\n\t\t\t\t%@\n\t\t\t\t%@\n\t\t\t\t",
                                benficiary.address[@"firstLineMailing"],
                                benficiary.address[@"city"],
@@ -78,10 +78,10 @@
     [paragraphStyle setAlignment:NSTextAlignmentLeft];
     
     NSMutableAttributedString *attributedAddressString = [[NSMutableAttributedString alloc] initWithString:
-                                       [NSString stringWithFormat:@"SSN \t\t\t\t %@\nDOB \t\t\t %@\nPhone \t\t\t %@\n\nAddress \t\t\t %@",
-                                        benficiary.socialSecurityNumber,
+                                      [NSString stringWithFormat:@"SSN \t\t\t\t %@\nDOB \t\t\t %@\nPhone \t\t\t %@\n\nAddress \t\t\t %@",
+                                       benficiary.socialSecurityNumber,
                                         [self DOBFormatter:benficiary],
-                                        benficiary.phoenNumber,
+                                        [self formatPhoneNumber:benficiary.phoenNumber],
                                         addressString]];
     
     [attributedAddressString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, [attributedAddressString length])];
@@ -89,4 +89,11 @@
     return attributedAddressString;
 }
 
+- (NSString*)formatPhoneNumber:(NSString*)phoenNumber {
+    NSString *areaCode = [phoenNumber substringToIndex:3];
+    NSString *firstThree = [phoenNumber substringWithRange:NSMakeRange(3, 3)];
+    NSString *lastFour = [phoenNumber substringWithRange:NSMakeRange(6,4)];
+    
+    return [NSString stringWithFormat:@"(%@)-%@-%@",areaCode,firstThree,lastFour];
+}
 @end
