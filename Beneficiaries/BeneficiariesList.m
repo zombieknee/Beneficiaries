@@ -38,6 +38,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    // gets info for beneficiary and displays in a popup alert
     Beneficiary *beneficiary = self.beneficiaries[indexPath.row];
     NSString *title = [NSString stringWithFormat:@"%@ %@ (%@)",beneficiary.firstName, beneficiary.lastName, beneficiary.designationCode];
     
@@ -56,6 +57,7 @@
 
 
 - (NSString*)DOBFormatter:(Beneficiary *)beneficiary {
+    // makes the date of birth more readable
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"MMddyyyy"];
     
@@ -90,6 +92,7 @@
 }
 
 - (NSString*)formatPhoneNumber:(NSString*)phoenNumber {
+    // makes the phone number more readable
     NSString *areaCode = [phoenNumber substringToIndex:3];
     NSString *firstThree = [phoenNumber substringWithRange:NSMakeRange(3, 3)];
     NSString *lastFour = [phoenNumber substringWithRange:NSMakeRange(6,4)];
